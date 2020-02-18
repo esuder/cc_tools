@@ -19,6 +19,8 @@ class Platform:
 #  platform
 #  year
 class Game:
+    # Platforms are inputted as objects (platform=None). You can't enter it in as a string to
+    #the Game class
     def __init__(self, title="Unknown", platform=None, year=0):
         self.title = title
         self.platform = platform
