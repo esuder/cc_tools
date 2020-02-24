@@ -4,7 +4,7 @@ Created for the class Programming for Game Designers
 """
 BYTE_ORDER = "little"
 
-
+#don't have to work with this class
 class CCField:
     """The base field class
     Member vars:
@@ -236,7 +236,7 @@ class CCMapHintField(CCField):
         return hint_bytes
 
 
-##HERE FOR REFERNECE, BUT NOT SUPPORTED
+##HERE FOR REFERENCE, BUT NOT SUPPORTED. use field 6, an encoded password. don't use this field, an unencoded password
 ##MAKE SURE YOU USE CCEncodedPasswordField for PASSWORDS
 class CCPasswordField(CCField):
     """A class defining an unencoded password
@@ -339,7 +339,7 @@ class CCLevel:
     def add_field(self, field):
         self.optional_fields.append(field)
 
-
+#goal is to make valid CCLevelPack
 class CCLevelPack:
     """A class defining the data of a pack of cc levels
     Member vars:
