@@ -32,6 +32,18 @@ for json_level in json_level_pack:
         elif field_type == "password":
             new_password_field = cc_classes.CCEncodedPasswordField(json_field["password"])
             new_level.add_field(new_password_field)
+        elif field_type == "monster":
+            monsters = []
+            json_monster_list = json_field["monsters"]
+            for json_monster in json_monster_list:
+                x = json_monster["x"]
+                y = json_monster["y"]
+                new_monster_coord = cc_classes.CCCoordinate(x, y)
+                monsters.append(new_monster_coord)
+            new_monster_field = cc_classes.CCMonsterMovementField(monsters)
+            print("made new monster field")
+            print(new_monster_field)
+            new_level.add_field(new_monster_field)
 
     new_level_pack.add_level(new_level)
 
