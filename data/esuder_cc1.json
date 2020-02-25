@@ -40,7 +40,7 @@
     "optional_fields" : [
       {
         "field_type" : "title",
-        "title" : "esuder Level."
+        "title" : "Bugs 'n' Balls"
       },
       {
         "field_type" : "hint",
