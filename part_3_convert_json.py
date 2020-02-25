@@ -35,6 +35,7 @@ for json_level in json_level_pack:
 
     new_level_pack.add_level(new_level)
 
+#print(new_level_pack)
 
 cc_dat_utils.write_cc_level_pack_to_dat(new_level_pack, "data/esuder_cc1.dat")
 #test_dat = cc_dat_utils.make_cc_level_pack_from_dat("data/esuder_cc1.dat")
